@@ -43,4 +43,8 @@ public class UserService {
         }
 
     }
+
+    public Boolean doesUserExists(UUID userId) {
+        return userRepository.existsById(userId);
+    }
 }

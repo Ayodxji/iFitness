@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: userservice
+    name: user-service
 
   datasource:
     url: jdbc:postgresql://localhost:5432/ifitness-user-db
@@ -19,3 +19,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
